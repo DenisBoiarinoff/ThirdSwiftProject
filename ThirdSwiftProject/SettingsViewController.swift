@@ -128,7 +128,9 @@ class SettingsViewController: UIViewController, UIImagePickerControllerDelegate,
 		if let pickedImg = info[UIImagePickerControllerOriginalImage] as? UIImage {
 			self.accountImg.contentMode = .ScaleAspectFit
 			profile?.avatar = pickedImg
-			self.accountImg.image = profile?.avatar
+			saveProfile()
+//			self.accountImg.image = profile?.avatar
+//			self.accountImg.image = pickedImg
 
 		}
 		dismissViewControllerAnimated(true, completion: nil)

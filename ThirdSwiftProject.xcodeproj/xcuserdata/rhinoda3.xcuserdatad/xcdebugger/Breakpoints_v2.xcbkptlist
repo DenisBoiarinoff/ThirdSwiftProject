@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ThirdSwiftProject/SettingsViewController.swift"
-            timestampString = "490269518.543308"
+            timestampString = "490275945.755861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "prepareViewToShow()"
             landmarkType = "5">
          </BreakpointContent>
