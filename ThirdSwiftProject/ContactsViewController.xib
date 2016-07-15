@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactsViewController" customModule="ThirdSwiftProject" customModuleProvider="target">
+            <connections>
+                <outlet property="contactsTable" destination="2Xl-PD-EXt" id="sZr-sU-kcU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Xl-PD-EXt">
+                    <rect key="frame" x="0.0" y="90" width="600" height="510"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="E4T-b1-jTU"/>
+                        <outlet property="delegate" destination="-1" id="Y1H-3n-2vK"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNH-AT-xXA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GNH-AT-xXA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DCs-Ed-YeR"/>
+                <constraint firstItem="2Xl-PD-EXt" firstAttribute="top" secondItem="GNH-AT-xXA" secondAttribute="bottom" id="Lcv-vd-UMm"/>
+                <constraint firstItem="2Xl-PD-EXt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.85" id="MXI-6l-UXp"/>
+                <constraint firstItem="GNH-AT-xXA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="boc-Yd-w5N"/>
+                <constraint firstAttribute="bottom" secondItem="2Xl-PD-EXt" secondAttribute="bottom" id="gxB-5C-UXu"/>
+                <constraint firstAttribute="trailing" secondItem="GNH-AT-xXA" secondAttribute="trailing" id="hML-Yb-Y7h"/>
+                <constraint firstAttribute="trailing" secondItem="2Xl-PD-EXt" secondAttribute="trailing" id="rIB-bY-bok"/>
+                <constraint firstItem="2Xl-PD-EXt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rrA-Mw-Azo"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
